@@ -35,7 +35,7 @@ h2 {
 
 h3 {
 	font-family:"Franklin Light",Helvetica, Arial, sans-serif;
-	font-size: 2.3em;
+	font-size: 1.8em;
 	font-weight: lighter;
 }
 
@@ -108,14 +108,10 @@ a {
 	}	
 
 </style>
-<!-- TITLE -->
 
 		<h1>International students in the United States by the number</h1>
 		<h2><em>United States has the world’s largest international student population, with over 1,000,000 students choosing to broaden their education and life experience.</em></h2>
-		<p class="byline"><em>By Minh Mai</em></p>
-		
-		<img src="gif1.gif"></img>
-		
+		<p class="byline"><em>By Minh Mai</em></p>		
 		
 		<h3>Why United States?</h3> 
 
@@ -133,10 +129,11 @@ a {
 			</div>
 
 			<p>The number of international students have been increasing gradually at the rate of 5-10% in the recent years, peaking at over 1 million student at the moment. The number will be anticipated to increase at the same rate in the future.</p>
-		
+			<div class="clear"></div>
+
 			<div class="map">
 			  	<h4>Where are they from</h4>
-
+			  	
 			    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 			    <script type="text/javascript">
 			      google.charts.load('upcoming', {'packages':['geochart']});
@@ -146,7 +143,6 @@ a {
 
 			        var data = google.visualization.arrayToDataTable([
 			        	["Country name", "Number of international students"],
-						  ["United States",748],
 						  ["Russia",7046],
 						  ["Rwanda",1484],
 						  ["Virgin Islands",561],
@@ -385,7 +381,7 @@ a {
 			    </script>
 			</div>
 
-		<div id="regions_div" style="width: 100%;"></div>
+		<div id="regions_div" style="width: 75%;"></div>
 		<div class="clear"></div>
 		<div class="caption">Data by November 2016</div>
 
@@ -400,10 +396,8 @@ a {
 
 			<div class="map">
 				<h4>International students population by states</h4>  
-				<div id="1">
 				<script type='text/javascript' src="https://www.gstatic.com/charts/loader.js"></script>
-
-					  <script type="text/javascript">
+				<script type="text/javascript">
 					  google.charts.load('upcoming', {'packages': ['geochart']});
 					  google.charts.setOnLoadCallback(drawRegionsMap);
 
@@ -467,18 +461,23 @@ a {
 					    options['resolution'] = 'provinces';
 					    options['colors'] = ['#ffffff', '#8B4513'];
 
-					     var chart = new google.visualization.GeoChart(document.getElementById('1'));
+					     var chart = new google.visualization.GeoChart(document.getElementById('USmap'));
 
 					     chart.draw(data, options);
 					   }
 					  </script>
 					</div>
+			<div id="USmap" style="width: 75%;"></div>
         	
         	<div class="caption">Data by November 2016</div>
+
+        	<div class="clear"></div>
+
         	<p>Looking at the map, we can see that the international student are concerntrated in the states that have more metropolitan areas.</p>
         	<p>The number of foreign students in California was 10.5% higher than the previous academic year. Four of the top 20 institutions that are having the most international students are in the state of California.</p>
         	<p>New York State is also a popular study destination, with New York University topping all schools with 15,543 foreign students, and Columbia University is currently hosting 12,740 international students.</p>
 
+        	<img src="gif1.gif"></img>
 			
 		<div class="clear"></div>
 		<div class="clear"></div>		
